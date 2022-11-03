@@ -8,7 +8,6 @@ const cors = require("cors");
 require("./config/passport");
 require("dotenv").config();
 
-
 app.use(cors());
 app.use(expressSession({ resave: false, saveUninitialized: true, secret: "bebas mau di isi apa"}))
 app.use(passport.initialize());
