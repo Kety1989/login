@@ -6,7 +6,7 @@ const db = require("./models");
 const jwt = require("jsonwebtoken");
 const cors = require("cors");
 require("./config/passport");
-// require("dotenv").config();
+require("dotenv").config();
 
 
 app.use(cors());

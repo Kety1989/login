@@ -4,8 +4,8 @@ const { Strategy } = require ("passport-google-oauth2");
 
 passport.use(new Strategy(
   {
-    clientID: "870348742941-inqkhv2smdpbn79pef81oj47l8qnhu17.apps.googleusercontent.com",
-    clientSecret: "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",
+    clientID: process.env.PASSPORT_CLIENT_ID,
+    clientSecret: process.env.PASSPORT_CLIENT_SECRET,
     callbackURL:"https://belajarlogin.herokuapp.com/api/v1/auth/google",
     passReqToCallback: true
   },
